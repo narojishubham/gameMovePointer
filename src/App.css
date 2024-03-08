@@ -1,10 +1,10 @@
 .logo {
   position: absolute;
-  transition: left 1s ease, top 1s ease;
+  transition: left 1.5s ease, top 1.5s ease;
 }
 
 .logo.moving {
-  animation: moveAnimation 2s forwards;
+  animation: moveAnimation 2.5s forwards;
 }
 
 @keyframes moveAnimation {
