@@ -15,7 +15,7 @@ function App() {
   return (
     <div
       className="App"
-      style={{ height: "100vh", width: "100vw" }}
+      style={{ height: "100vh", width: "100vw", background: "#000" }}
       onClick={handleClick}
     >
       <div className="logo" style={{ left: position.x, top: position.y }}>
