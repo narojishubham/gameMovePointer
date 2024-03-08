@@ -1,12 +1,19 @@
-.App {
-  position: relative;
-  width: 100%;
-  height: 100vh;
+.logo {
+  position: absolute;
+  transition: left 1s, top 1s;
 }
 
-.logo {
-  width: 100px;
-  height: 100px;
-  /* background-color: blue; */
-  position: absolute;
+.logo.moving {
+  animation: moveAnimation 1s forwards;
+}
+
+@keyframes moveAnimation {
+  from {
+    transform: translate(0, 0);
+  }
+
+  to {
+    transform: translate(100px, 100px);
+    /* Adjust as needed */
+  }
 }
