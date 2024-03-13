@@ -1,6 +1,6 @@
 .logo {
   position: absolute;
-  transition: left 5s ease, top 4s ease;
+  transition: left 6s ease, top 6s ease;
 }
 
 .logo.moving {
