@@ -1,0 +1,19 @@
+.description{
+        text-align: center;
+            width: 38%;
+            line-height: 28.15px;
+            font-size: 23px;
+            padding-bottom: 4rem;
+            color: rgb(122, 119, 119);
+}
+@media only screen and (max-width: 750px) {
+.description {
+        text-align: center;
+        width: 64%;
+        line-height: 28.15px;
+        font-size: 1.3rem;
+        padding-bottom: 4rem;
+        color: rgb(122, 119, 119);
+    }
+}
+ 

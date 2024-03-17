@@ -1,0 +1,211 @@
+.MenuBarClass {
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: 0px;
+  display: flex;
+  width: calc(100% - 6.9rem);
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 2rem;
+  margin: 1.5rem;
+  font-weight: 500;
+}
+
+.mySlides {
+  display: none;
+  height: 53rem;
+}
+
+img {
+  vertical-align: middle;
+}
+
+.slideshow-container {
+  position: relative;
+  margin: auto;
+  height: 53rem;
+}
+
+.active {
+  background-color: #000;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+}
+
+@keyframes slideTransition {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px) scale(0.95);
+  }
+
+  20% {
+    opacity: 0.5;
+    transform: translateY(-10px) scale(0.98);
+  }
+
+  40% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+  60% {
+    opacity: 0.75;
+    transform: translateY(0) scale(1);
+  }
+
+  80% {
+    opacity: 0.5;
+    transform: translateY(0) scale(0.98);
+  }
+
+  100% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+}
+
+.mySlides {
+  display: none;
+  animation: fade-out 1s ease-in-out forwards;
+}
+
+.mySlides.active {
+  display: block;
+  animation: slideTransition 1s ease-in-out forwards,
+    fade-in 1s ease-in-out forwards;
+}
+
+@keyframes fade-in1 {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out1 {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+  }
+}
+
+.secondImage {
+  animation: fade-in1 1s ease-in-out forwards;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+@keyframes borderAnimation {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+  }
+
+  25% {
+    box-shadow: 0 0 0 20px rgba(255, 0, 0, 0.5);
+  }
+
+  50% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+  }
+
+  75% {
+    box-shadow: 0 0 0 20px rgba(255, 0, 0, 0.5);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.5);
+  }
+}
+
+.box.animation {
+  animation: borderAnimation 2s infinite linear;
+}
+
+.borderLine1 {
+  background: red;
+  width: 1rem;
+  height: 1rem;
+  transition: width 2s;
+}
+.borderLine11 {
+  width: 10rem;
+}
+
+.transition-box1 {
+  background: rgb(122, 119, 119);
+  transition: width 1s ease-out;
+}
+
+.transition-box2 {
+  background: rgb(122, 119, 119);
+  transition: height 1s ease-out;
+}
+
+.transition-box3 {
+  background: rgb(122, 119, 119);
+  transition: width 1s ease-out;
+}
+
+.transition-box4 {
+  background: rgb(122, 119, 119);
+  transition: height 1s ease-out;
+  width: 2rem;
+}
+.linePosition {
+  width: 8.4rem;
+  height: 0.3rem;
+  position: absolute;
+  top: -1.2rem;
+  left: -1.1rem;
+}
+.linePosition2 {
+  width: 0.3rem;
+  position: absolute;
+  top: -1.2rem;
+  left: 7.2rem;
+}
+.linePosition3 {
+  width: 7rem;
+  height: 0.3rem;
+  position: absolute;
+  bottom: -1.4rem;
+  right: -1.3rem;
+}
+.linePosition4 {
+  width: 0.3rem;
+  height: 7rem;
+  position: absolute;
+  bottom: -1.4rem;
+  left: -1.2rem;
+}

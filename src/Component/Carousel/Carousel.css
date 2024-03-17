@@ -1,0 +1,44 @@
+.wrapper {
+    display: flex;
+    max-width: 1200px;
+    position: relative;
+}
+
+.carousel {
+    font-size: 0px;
+    cursor: pointer;
+    overflow: hidden;
+    white-space: nowrap;
+    scroll-behavior: smooth;
+}
+
+.carousel img {
+    height: 480px;
+        object-fit: cover;
+        user-select: none;
+        margin-left: 1rem;
+        width: calc(100% / 3);
+        transition: transform 0.3s ease;
+    /* Add transition for smooth tilt effect */
+}
+@media screen and (max-width: 900px) {
+    .carousel img {
+        width: calc(100% / 2);
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .carousel img {
+        width: 100%;
+    }
+        .wrapper {
+            display: flex;
+            max-width: 340px;
+            position: relative;}
+}
+.slide-text {
+    font-size: 16px;
+    margin-top: 10px;
+    text-align: center;
+    color: #333;
+}
